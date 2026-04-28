@@ -4,6 +4,7 @@
     "name": "Abby Hatch",
     "email": "abby@deepgene.us"
   },
+  "description": "DeepGene plugins for VCEP outreach and research",
   "plugins": [
     {
       "name": "outreach-research",
