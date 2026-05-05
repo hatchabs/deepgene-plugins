@@ -1,5 +1,5 @@
 ---
-description: Greet someone by name to confirm the dgai-hello plugin is installed and working. Use when the user invokes /dgai-hello or asks you to run the hello test. Responds with "Hello, [name]. The plumbing works." — if no name is supplied, substitute "world".
+description: Greet someone by name. Use when the user runs /dgai-hello.
 ---
 
 # dgai-hello
