@@ -1,3 +1,3 @@
 # skills/
 
-Standalone skill drafts not yet packaged into a plugin. Working area for skills before they get bundled and published.
+Standalone skill drafts not yet packaged into a plugin. Once a skill is stable, move it into the relevant `plugins/<name>/skills/` directory.
