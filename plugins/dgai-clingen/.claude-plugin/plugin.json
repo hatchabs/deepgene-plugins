@@ -1,0 +1,18 @@
+{
+  "name": "dgai-clingen",
+  "version": "0.1.0",
+  "description": "Public ClinGen panel lookup as MCP tools: clingen.lookup_panel and clingen.list_chairs, served from the CSpec Registry API.",
+  "author": {
+    "name": "Abby Hatch",
+    "email": "abby@deepgene.us"
+  },
+  "mcpServers": {
+    "clingen": {
+      "command": "python3",
+      "args": ["-m", "clingen.server"],
+      "env": {
+        "PYTHONPATH": "${CLAUDE_PLUGIN_ROOT}/mcp"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+    method: GET
+    uri: https://cspec.genome.network/cspec/Gene/id/OTC/ldFor?detail=med
+  response:
+    body:
+      string: |
+        {
+          "entId": "OTC",
+          "entType": "Gene",
+          "entIri": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8512",
+          "ldhIri": "https://cspec.genome.network/cspec/Gene/id/OTC",
+          "entContent": {
+            "symbol": "OTC",
+            "name": "ornithine transcarbamylase",
+            "hgnc_id": "HGNC:8512"
+          },
+          "ldFor": [
+            {
+              "Affiliation": [
+                {
+                  "entId": "50050",
+                  "entType": "Affiliation",
+                  "ldhIri": "https://cspec.genome.network/cspec/Affiliation/id/50050",
+                  "entContent": {
+                    "affiliation_fullname": "Urea Cycle Disorders Variant Curation Expert Panel",
+                    "affiliation_id": "50050",
+                    "type": "VCEP"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    status:
+      code: 200
+      message: OK
+version: 1

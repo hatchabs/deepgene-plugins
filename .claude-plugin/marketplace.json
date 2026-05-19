@@ -15,6 +15,11 @@
       "name": "dgai-hello",
       "source": "./plugins/dgai-hello",
       "description": "Greeting plugin for testing marketplace installs."
+    },
+    {
+      "name": "dgai-clingen",
+      "source": "./plugins/dgai-clingen",
+      "description": "MCP server exposing ClinGen panel lookups (lookup_panel, list_chairs) over the public CSpec Registry — no API key required."
     }
   ]
 }

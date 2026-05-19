@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "clingen": {
+      "command": "python3",
+      "args": ["-m", "clingen.server"],
+      "env": {
+        "PYTHONPATH": "${CLAUDE_PLUGIN_ROOT}/mcp"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+    method: GET
+    uri: https://cspec.genome.network/cspec/Affiliation/id/50013?detail=high
+  response:
+    body:
+      string: |
+        {
+          "entId": "50013",
+          "entType": "Affiliation",
+          "ldhIri": "https://cspec.genome.network/cspec/Affiliation/id/50013",
+          "entContent": {
+            "affiliation_id": "50013",
+            "affiliation_fullname": "TP53 Variant Curation Expert Panel",
+            "type": "VCEP",
+            "scope": "Curates variants in TP53 in relation to Li-Fraumeni syndrome.",
+            "approval_status": "Approved",
+            "members": [
+              {
+                "name": "Kelvin Chao",
+                "role": "Chair",
+                "institution": "Memorial Sloan Kettering Cancer Center"
+              },
+              {
+                "name": "Tina Pesaran",
+                "role": "Co-Chair",
+                "institution": "Ambry Genetics"
+              },
+              {
+                "name": "Cristina Fortuno",
+                "role": "Coordinator",
+                "institution": "QIMR Berghofer"
+              }
+            ],
+            "approver": ["Kelvin Chao", "Tina Pesaran"]
+          }
+        }
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    status:
+      code: 200
+      message: OK
+version: 1
