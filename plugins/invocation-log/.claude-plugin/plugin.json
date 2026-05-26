@@ -1,0 +1,11 @@
+{
+  "name": "invocation-log",
+  "displayName": "Invocation Log",
+  "version": "0.1.0",
+  "description": "PostToolUse hook that logs every tool invocation to ~/.claude/dgai-invocations.jsonl.",
+  "author": {
+    "name": "DeepGene AI",
+    "email": "abby@deepgene.us"
+  },
+  "hooks": "./hooks/hooks.json"
+}
