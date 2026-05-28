@@ -1,10 +1,14 @@
 # Anti-AI-ese Style Guide
 
-## What this guide does
+This is a context document. Voice-bearing skills (outreach drafters, brief writers, content generators, anything that produces prose) load it at runtime and apply its rules to whatever they produce. Skills define the *what* to write; this guide defines the *how to sound human*. Project-specific or sender-specific overlays (brand voice, individual writing style, domain exceptions) live in adjacent context files and plug in alongside this guide, not inside it.
 
-Constrains Claude's writing to match the voice expected for DeepGene and The Curation Table. The goal is not to hide that AI assisted in drafting. The goal is that the final text reads like the specific person whose name is on it actually wrote and owns it.
+## Purpose
 
-Apply every rule below to any draft before returning it to the user. When the user asks you to review someone else's text for AI-ese, flag violations with the specific rule they break rather than silently rewriting.
+The goal is not to hide that AI helped draft something. The goal is that the final text reads like a specific accountable person wrote it, reviewed it, and stands behind it. Readers detect AI-ese fast, and when they do, trust drops before the content gets evaluated.
+
+## The core principle
+
+Specific beats generic. Every time you reach for an impressive-sounding word, a balanced-sounding tricolon, or a smooth-sounding transition, check whether you can replace it with the actual concrete thing instead. If you cannot, the sentence probably should not be there.
 
 ## The single biggest tell: em dashes
 
@@ -104,6 +108,24 @@ Good: "Your 2023 paper on LDLR case-control data changed how we think about PS4 
 
 **Avoid the "bolded mini-header + colon + explanation" bullet format.** That layout is an AI fingerprint on its own. Write in complete sentences, or use a plainer list format.
 
+## Positive examples
+
+Specific over generic
+- Bad: "Your important work in the field has been pivotal."
+- Good: "Your committee's 2024 reclassification of the variant set the framework for the rest of the panels."
+
+Named contribution over status language
+- Bad: "She is a leading expert in the area."
+- Good: "Heidi Rehm led the team that published the 2015 ACMG/AMP standards."
+
+Substance over preamble
+- Bad: "The science is complicated, but let's break it down."
+- Good: "The variant sits in a splice region with conflicting evidence, so the panel deferred classification pending an RNA assay."
+
+Earned emphasis over hollow intensifier
+- Bad: "This is truly a remarkable achievement."
+- Good: "This is the first time a community-curated panel has overruled a commercial lab's classification."
+
 ## Context-specific rules
 
 **Outreach emails.** Every sentence must be specific to this recipient. If a line could have been sent to anyone in the field, cut it. Name the actual paper, project, or finding, not a generic compliment. Replace "your important work" with the specific thing they did.
@@ -133,6 +155,15 @@ When the user asks you to check a draft for AI-ese, don't silently rewrite. Inst
 - A note if you find zero violations, so the user knows the draft is clean.
 
 This lets the user decide which fixes to apply rather than accepting a wholesale rewrite.
+
+## How to use this guide
+
+This guide is loaded as context by skills that produce prose. It is not a skill itself. The intended pattern:
+
+1. A voice-bearing skill (for example, an outreach drafter) references this guide as its style layer.
+2. The skill defines the *what* (research the recipient, produce a draft, structure the ask).
+3. Project-specific or sender-specific overlays sit alongside in `/context/` and add narrower rules: brand voice, individual sender exceptions, domain-specific phrasing that would not apply elsewhere.
+4. Before returning a draft, the skill applies the rules above. Project overlays can add rules, but should not weaken these defaults silently.
 
 ## Reference
 
